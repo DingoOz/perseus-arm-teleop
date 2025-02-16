@@ -112,21 +112,65 @@ std::pair<std::string, std::string> selectSerialPorts(const std::vector<std::str
     return {port1, port2};
 }
 
-// Create a progress bar string
-std::string createProgressBar(uint16_t value)
+// Create a colored progress bar string
+void displayProgressBar(WINDOW* win, int y, int x, uint16_t current, uint16_t min, uint16_t max)
 {
-    // Clamp value to 0-4095
-    value = std::min(value, static_cast<uint16_t>(4095));
+    // Clamp values to 0-4095
+    current = std::min(current, static_cast<uint16_t>(4095));
+    min = std::min(min, static_cast<uint16_t>(4095));
+    max = std::min(max, static_cast<uint16_t>(4095));
     
-    const size_t barLength = 20;
-    size_t filledLength = static_cast<size_t>((static_cast<double>(value) / 4095.0) * barLength);
+    const size_t barLength = 40;
     
-    std::string bar = "[";
-    bar.append(filledLength, '#');
-    bar.append(barLength - filledLength, ' ');
-    bar.append("]");
+    // Calculate positions
+    size_t currentPos = static_cast<size_t>((static_cast<double>(current) / 4095.0) * barLength);
+    size_t minPos = static_cast<size_t>((static_cast<double>(min) / 4095.0) * barLength);
+    size_t maxPos = static_cast<size_t>((static_cast<double>(max) / 4095.0) * barLength);
     
-    return bar;
+    // Print opening bracket
+    mvwaddch(win, y, x, '[');
+    x++;
+    
+    // Print bar with colors
+    for (size_t i = 0; i < barLength; i++) {
+        if (has_colors()) {
+            if (i == minPos) {
+                wattron(win, COLOR_PAIR(1));  // Blue for min
+                waddch(win, '#');
+                wattroff(win, COLOR_PAIR(1));
+            }
+            else if (i == maxPos) {
+                wattron(win, COLOR_PAIR(2));  // Green for max
+                waddch(win, '#');
+                wattroff(win, COLOR_PAIR(2));
+            }
+            else if (i < currentPos) {
+                if (i < minPos) {
+                    wattron(win, COLOR_PAIR(3) | A_DIM);  // Dimmed white for positions before min
+                    waddch(win, '#');
+                    wattroff(win, COLOR_PAIR(3) | A_DIM);
+                } else {
+                    wattron(win, COLOR_PAIR(3));  // Bright white for current valid position
+                    waddch(win, '#');
+                    wattroff(win, COLOR_PAIR(3));
+                }
+            }
+            else {
+                waddch(win, ' ');
+            }
+        }
+        else {
+            // For non-color displays, still show all positions but with different characters
+            if (i < currentPos) {
+                waddch(win, (i < minPos) ? '.' : '#');
+            } else {
+                waddch(win, ' ');
+            }
+        }
+    }
+    
+    // Print closing bracket
+    waddch(win, ']');
 }
 
 // Structure to hold servo data including min/max values
@@ -161,13 +205,12 @@ void displayServoValues(WINDOW* win,
         
         if (servo.error.empty()) 
         {
-            std::string progressBar = createProgressBar(servo.current);
-            mvwprintw(win, row, 2, "%-8d %8u  %8u  %8u  %s", 
+            mvwprintw(win, row, 2, "%-8d %8u  %8u  %8u  ", 
                      static_cast<int>(i + 1),
                      servo.current,
                      servo.min,
-                     servo.max,
-                     progressBar.c_str());
+                     servo.max);
+            displayProgressBar(win, row, 42, servo.current, servo.min, servo.max);
         }
         else 
         {
@@ -188,13 +231,12 @@ void displayServoValues(WINDOW* win,
         
         if (servo.error.empty()) 
         {
-            std::string progressBar = createProgressBar(servo.current);
-            mvwprintw(win, row, 2, "%-8d %8u  %8u  %8u  %s", 
+            mvwprintw(win, row, 2, "%-8d %8u  %8u  %8u  ", 
                      static_cast<int>(i + 1),
                      servo.current,
                      servo.min,
-                     servo.max,
-                     progressBar.c_str());
+                     servo.max);
+            displayProgressBar(win, row, 42, servo.current, servo.min, servo.max);
         }
         else 
         {
@@ -239,6 +281,14 @@ int main(int argc, char* argv[])
         curs_set(0);
         nodelay(win, TRUE);
         keypad(win, TRUE);
+        
+        // Initialize colors if terminal supports them
+        if (has_colors()) {
+            start_color();
+            init_pair(1, COLOR_BLUE, COLOR_BLACK);   // For min value
+            init_pair(2, COLOR_GREEN, COLOR_BLACK);  // For max value
+            init_pair(3, COLOR_WHITE, COLOR_BLACK);  // For current value
+        }
         
         // Initialize servo readers and data storage for both arms
         ST3215ServoReader reader1(port_path1, 1000000);
