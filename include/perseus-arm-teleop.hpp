@@ -4,13 +4,16 @@
 #include <string>
 #include <vector>
 #include <cstdint>
+#include <termios.h>
+#include <fcntl.h>
+#include <chrono>
 
 class ST3215ServoReader 
 {
 public:
     /**
      * @brief Constructs a new ST3215ServoReader
-     * @param port Serial port path (e.g., "/dev/ttyUSB0")
+     * @param port Serial port path (e.g., "/dev/ttyACM0")
      * @param baud_rate Baud rate for serial communication
      */
     ST3215ServoReader(const std::string& port, unsigned int baud_rate);
@@ -24,11 +27,20 @@ public:
      * @brief Reads the current position of a specified servo
      * @param servo_id ID of the servo to read from
      * @return Current position value (0-4095)
-     * @throws std::runtime_error if communication fails
+     * @throws std::runtime_error if communication fails after retries
      */
     uint16_t readPosition(uint8_t servo_id);
 
 private:
+    /**
+     * @brief Performs a single attempt to read the position
+     * @param servo_id ID of the servo to read from
+     * @param timeout Maximum time to wait for response
+     * @return Current position value (0-4095)
+     * @throws std::runtime_error if communication fails
+     */
+    uint16_t _readPositionOnce(uint8_t servo_id, const std::chrono::milliseconds& timeout);
+
     /**
      * @brief Creates a read command packet according to ST3215 protocol
      * @param id Servo ID
