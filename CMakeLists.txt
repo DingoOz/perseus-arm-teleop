@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(Curses REQUIRED)
+find_package(yaml-cpp REQUIRED)
 
 # Add include directory
 include_directories(${PROJECT_SOURCE_DIR}/include ${CURSES_INCLUDE_DIR})
@@ -22,5 +23,6 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} PRIVATE 
     Boost::system
     ${CURSES_LIBRARIES}
+    yaml-cpp
     pthread
 )

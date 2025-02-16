@@ -1,0 +1,43 @@
+timestamp: 2025-02-16_16-15-58
+arm1_port: /dev/ttyACM1
+arm2_port: /dev/ttyACM0
+arm1:
+  servos:
+    - id: 1
+      min: 2801
+      max: 2812
+    - id: 2
+      min: 2994
+      max: 3258
+    - id: 3
+      min: 1716
+      max: 2431
+    - id: 4
+      min: 1053
+      max: 1943
+    - id: 5
+      min: 2825
+      max: 3298
+    - id: 6
+      min: 2214
+      max: 2260
+arm2:
+  servos:
+    - id: 1
+      min: 895
+      max: 895
+    - id: 2
+      min: 573
+      max: 573
+    - id: 3
+      min: 2755
+      max: 2755
+    - id: 4
+      min: 1607
+      max: 1607
+    - id: 5
+      min: 3344
+      max: 3344
+    - id: 6
+      min: 2305
+      max: 2305

@@ -262,6 +262,9 @@ pkgcfg_lib_NCURSES_ncurses:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
 //Path to a library.
 pkgcfg_lib_NCURSES_tinfo:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinfo.so
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/home/dingo/miniconda3/lib/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries

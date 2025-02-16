@@ -1,1 +1,1 @@
-/usr/bin/c++ "CMakeFiles/perseus-arm-teleop.dir/main.cpp.o" "CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o" -o perseus-arm-teleop  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 -lcurses /usr/lib/x86_64-linux-gnu/libform.so -lpthread
+/usr/bin/c++ "CMakeFiles/perseus-arm-teleop.dir/main.cpp.o" "CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o" -o perseus-arm-teleop  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 -lcurses /usr/lib/x86_64-linux-gnu/libform.so -lyaml-cpp -lpthread

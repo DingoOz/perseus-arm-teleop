@@ -873,6 +873,7 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_ops.h \
   /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
@@ -881,6 +882,7 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
@@ -920,11 +922,14 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -971,6 +976,7 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/fstream \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/future \
   /usr/include/c++/11/initializer_list \
@@ -981,6 +987,7 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/map \
   /usr/include/c++/11/memory \
@@ -992,6 +999,7 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/ratio \
+  /usr/include/c++/11/set \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
@@ -1203,8 +1211,10 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
@@ -1233,6 +1243,37 @@ CMakeFiles/perseus-arm-teleop.dir/main.cpp.o: /home/dingo/Programming/perseus-ar
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/sys/un.h \
+  /usr/include/yaml-cpp/binary.h \
+  /usr/include/yaml-cpp/dll.h \
+  /usr/include/yaml-cpp/emitter.h \
+  /usr/include/yaml-cpp/emitterdef.h \
+  /usr/include/yaml-cpp/emittermanip.h \
+  /usr/include/yaml-cpp/emitterstyle.h \
+  /usr/include/yaml-cpp/exceptions.h \
+  /usr/include/yaml-cpp/mark.h \
+  /usr/include/yaml-cpp/node/convert.h \
+  /usr/include/yaml-cpp/node/detail/impl.h \
+  /usr/include/yaml-cpp/node/detail/iterator.h \
+  /usr/include/yaml-cpp/node/detail/iterator_fwd.h \
+  /usr/include/yaml-cpp/node/detail/memory.h \
+  /usr/include/yaml-cpp/node/detail/node.h \
+  /usr/include/yaml-cpp/node/detail/node_data.h \
+  /usr/include/yaml-cpp/node/detail/node_iterator.h \
+  /usr/include/yaml-cpp/node/detail/node_ref.h \
+  /usr/include/yaml-cpp/node/emit.h \
+  /usr/include/yaml-cpp/node/impl.h \
+  /usr/include/yaml-cpp/node/iterator.h \
+  /usr/include/yaml-cpp/node/node.h \
+  /usr/include/yaml-cpp/node/parse.h \
+  /usr/include/yaml-cpp/node/ptr.h \
+  /usr/include/yaml-cpp/node/type.h \
+  /usr/include/yaml-cpp/noexcept.h \
+  /usr/include/yaml-cpp/null.h \
+  /usr/include/yaml-cpp/ostream_wrapper.h \
+  /usr/include/yaml-cpp/parser.h \
+  /usr/include/yaml-cpp/stlemitter.h \
+  /usr/include/yaml-cpp/traits.h \
+  /usr/include/yaml-cpp/yaml.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -2476,9 +2517,45 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
+/usr/include/yaml-cpp/yaml.h:
+
+/usr/include/yaml-cpp/stlemitter.h:
+
+/usr/include/yaml-cpp/null.h:
+
+/usr/include/yaml-cpp/node/ptr.h:
+
+/usr/include/yaml-cpp/node/parse.h:
+
+/usr/include/yaml-cpp/node/impl.h:
+
+/usr/include/yaml-cpp/node/emit.h:
+
+/usr/include/yaml-cpp/parser.h:
+
+/usr/include/yaml-cpp/node/detail/node.h:
+
+/usr/include/yaml-cpp/node/detail/memory.h:
+
+/usr/include/yaml-cpp/node/detail/iterator_fwd.h:
+
+/usr/include/yaml-cpp/node/detail/iterator.h:
+
+/usr/include/yaml-cpp/node/convert.h:
+
+/usr/include/yaml-cpp/mark.h:
+
+/usr/include/yaml-cpp/emitterstyle.h:
+
+/usr/include/yaml-cpp/emitter.h:
+
+/usr/include/yaml-cpp/dll.h:
+
 /usr/include/x86_64-linux-gnu/sys/un.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/yaml-cpp/traits.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -2514,9 +2591,13 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -2640,6 +2721,16 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/poll.h:
+
+/usr/include/x86_64-linux-gnu/bits/netdb.h:
+
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
 /usr/include/boost/mpl/aux_/integral_wrapper.hpp:
@@ -2647,6 +2738,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
 /usr/include/boost/asio/windows/basic_overlapped_handle.hpp:
+
+/usr/include/c++/11/bits/list.tcc:
 
 /usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
 
@@ -2756,6 +2849,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
+/usr/include/yaml-cpp/exceptions.h:
+
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/boost/config/detail/select_platform_config.hpp:
@@ -2802,8 +2897,6 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/asio/wait_traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/poll.h:
-
 /usr/include/boost/date_time/gregorian/greg_day.hpp:
 
 /usr/include/boost/date_time/time_system_counted.hpp:
@@ -2829,6 +2922,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/asio/local/connect_pair.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/yaml-cpp/node/detail/node_ref.h:
 
 /usr/include/boost/config/helper_macros.hpp:
 
@@ -2857,6 +2952,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/usr/include/yaml-cpp/node/iterator.h:
 
 /usr/include/boost/asio/this_coro.hpp:
 
@@ -3030,13 +3127,9 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/asio/traits/set_value_member.hpp:
 
+/usr/include/yaml-cpp/binary.h:
+
 /usr/include/boost/predef/language/objc.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/boost/date_time/time_iterator.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/boost/asio/ip/basic_endpoint.hpp:
 
@@ -3107,6 +3200,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/regex/config/cwchar.hpp:
 
 /usr/include/boost/asio/local/detail/endpoint.hpp:
+
+/usr/include/yaml-cpp/ostream_wrapper.h:
 
 /usr/include/boost/asio/impl/dispatch.hpp:
 
@@ -3254,6 +3349,10 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/asio/detail/scoped_ptr.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/boost/asio/ip/icmp.hpp:
+
 /usr/include/boost/asio/detail/eventfd_select_interrupter.hpp:
 
 /usr/include/boost/asio/detail/descriptor_write_op.hpp:
@@ -3301,6 +3400,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/predef/library/c/vms.h:
 
 /usr/include/boost/asio/execution/bulk_execute.hpp:
+
+/usr/include/yaml-cpp/node/node.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
 
@@ -3420,6 +3521,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/asio/detail/recycling_allocator.hpp:
 
+/usr/include/yaml-cpp/emittermanip.h:
+
 /usr/include/boost/predef/library/c/gnu.h:
 
 /usr/include/boost/predef/platform/mingw32.h:
@@ -3460,6 +3563,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/asm-generic/ioctls.h:
 
+/usr/include/yaml-cpp/node/type.h:
+
 /usr/include/boost/asio/ip/impl/basic_endpoint.hpp:
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
@@ -3475,6 +3580,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/date_time/gregorian_calendar.hpp:
 
 /usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/yaml-cpp/noexcept.h:
 
 /usr/include/boost/asio/buffer.hpp:
 
@@ -3561,8 +3668,6 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/date_time/gregorian/greg_date.hpp:
 
 /usr/include/boost/asio/ip/resolver_base.hpp:
-
-/usr/include/boost/asio/connect.hpp:
 
 /usr/include/boost/asio/execution/detail/as_invocable.hpp:
 
@@ -3728,6 +3833,10 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/boost/asio/detail/reactive_socket_sendto_op.hpp:
+
 /usr/include/boost/predef/compiler/metaware.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
@@ -3832,6 +3941,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/regex/config.hpp:
 
+/usr/include/yaml-cpp/node/detail/node_data.h:
+
 /usr/include/boost/asio/execution/set_error.hpp:
 
 /usr/include/boost/mpl/and.hpp:
@@ -3927,8 +4038,6 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/asio/execution/prefer_only.hpp:
 
 /usr/include/boost/asio/detail/tss_ptr.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/netdb.h:
 
 /usr/include/boost/asio/detail/variadic_templates.hpp:
 
@@ -4222,6 +4331,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/predef/compiler/gcc.h:
 
+/usr/include/yaml-cpp/node/detail/node_iterator.h:
+
 /usr/include/boost/type_traits/conditional.hpp:
 
 /usr/include/linux/falloc.h:
@@ -4366,11 +4477,11 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/predef/os/ios.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
 /usr/include/boost/predef/library/c/cloudabi.h:
 
 /usr/include/boost/predef/os/hpux.h:
+
+/usr/include/yaml-cpp/node/detail/impl.h:
 
 /usr/include/boost/predef/os/macos.h:
 
@@ -4392,6 +4503,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/predef/platform/mingw.h:
 
+/usr/include/c++/11/bits/stl_set.h:
+
 /usr/include/boost/predef/platform/windows_runtime.h:
 
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
@@ -4411,6 +4524,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/boost/preprocessor/array/elem.hpp:
+
+/usr/include/c++/11/list:
 
 /usr/include/ncurses_dll.h:
 
@@ -4449,6 +4564,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
+
+/usr/include/c++/11/set:
 
 /usr/include/boost/preprocessor/identity.hpp:
 
@@ -4518,6 +4635,14 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/boost/system/detail/system_category_posix.hpp:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/boost/date_time/time_iterator.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
 /usr/include/boost/system/system_error.hpp:
 
 /usr/include/c++/11/ctime:
@@ -4537,6 +4662,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/asio/impl/defer.hpp:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
 
@@ -4674,6 +4801,10 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/c++/11/bits/refwrap.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
 /usr/include/boost/asio/time_traits.hpp:
 
 /usr/include/boost/asio/traits/set_done_free.hpp:
@@ -4689,6 +4820,10 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/boost/asio/connect.hpp:
+
+/usr/include/c++/11/bits/stl_list.h:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -4711,6 +4846,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/yaml-cpp/emitterdef.h:
 
 /usr/include/boost/asio/ip/impl/network_v4.hpp:
 
@@ -4745,6 +4882,8 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 /usr/include/boost/asio/detail/service_registry.hpp:
 
 /usr/include/c++/11/ext/type_traits.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/boost/predef/compiler/metrowerks.h:
 
@@ -4924,22 +5063,6 @@ CMakeFiles/perseus-arm-teleop.dir/src/perseus-arm-teleop.cpp.o: /home/dingo/Prog
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/boost/asio/ip/icmp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/boost/asio/detail/reactive_socket_sendto_op.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
